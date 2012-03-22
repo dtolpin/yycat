@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils
+END
+RSAKey.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/RSAKey.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/__init__.py
+END
+Cryptlib_RC4.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/Cryptlib_RC4.py
+END
+PyCrypto_RC4.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/PyCrypto_RC4.py
+END
+Cryptlib_TripleDES.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/Cryptlib_TripleDES.py
+END
+PyCrypto_TripleDES.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/PyCrypto_TripleDES.py
+END
+PyCrypto_RSAKey.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/PyCrypto_RSAKey.py
+END
+dateFuncs.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/dateFuncs.py
+END
+codec.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/codec.py
+END
+ASN1Parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/ASN1Parser.py
+END
+keyfactory.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/keyfactory.py
+END
+Cryptlib_AES.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/Cryptlib_AES.py
+END
+PyCrypto_AES.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/PyCrypto_AES.py
+END
+rijndael.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/rijndael.py
+END
+RC4.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/RC4.py
+END
+Python_RC4.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/Python_RC4.py
+END
+entropy.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/entropy.c
+END
+cryptomath.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/cryptomath.py
+END
+TripleDES.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/TripleDES.py
+END
+OpenSSL_RC4.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/OpenSSL_RC4.py
+END
+OpenSSL_TripleDES.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/OpenSSL_TripleDES.py
+END
+Python_RSAKey.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/Python_RSAKey.py
+END
+OpenSSL_RSAKey.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/OpenSSL_RSAKey.py
+END
+cipherfactory.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/cipherfactory.py
+END
+hmac.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/hmac.py
+END
+AES.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/AES.py
+END
+Python_AES.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/Python_AES.py
+END
+OpenSSL_AES.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/OpenSSL_AES.py
+END
+jython_compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/jython_compat.py
+END
+xmltools.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/xmltools.py
+END
+win32prng.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/win32prng.c
+END
+compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/tlslite/utils/compat.py
+END

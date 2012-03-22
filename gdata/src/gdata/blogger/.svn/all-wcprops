@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/blogger
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/blogger/data.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/blogger/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/blogger/__init__.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/blogger/service.py
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps
+END
+groups_provisioning_quick_start_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/groups_provisioning_quick_start_example.py
+END
+userprovisioning_quick_start_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/userprovisioning_quick_start_example.py
+END
+orgunit_quick_start_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/orgunit_quick_start_example.py
+END
+org_unit_sites.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/org_unit_sites.py
+END
+email_settings_labels_filters.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/email_settings_labels_filters.py
+END
+emailsettings_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/emailsettings_example.py
+END
+provisioning_oauth2_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/provisioning_oauth2_example.py
+END
+adminsettings_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/adminsettings_example.py
+END
+migration_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/migration_example.py
+END
+emailsettings_pop_settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/emailsettings_pop_settings.py
+END
+multidomain_quick_start_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/apps/multidomain_quick_start_example.py
+END

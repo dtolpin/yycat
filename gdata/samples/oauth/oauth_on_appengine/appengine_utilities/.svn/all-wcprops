@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities
+END
+flash.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/flash.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/__init__.py
+END
+cron.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/cron.py
+END
+event.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/event.py
+END
+cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/cache.py
+END
+paginator.py
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/paginator.py
+END
+rotmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/rotmodel.py
+END
+sessions.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/oauth/oauth_on_appengine/appengine_utilities/sessions.py
+END

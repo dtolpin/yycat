@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests
+END
+contentforshopping_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/contentforshopping_test.py
+END
+youtube_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/youtube_test.py
+END
+live_client_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/live_client_test.py
+END
+codesearch_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/codesearch_test.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/__init__.py
+END
+service_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/service_test.py
+END
+auth_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/auth_test.py
+END
+apps_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/apps_test.py
+END
+health_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/health_test.py
+END
+spreadsheet_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/spreadsheet_test.py
+END
+data_smoke_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/data_smoke_test.py
+END
+gauth_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/gauth_test.py
+END
+data_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/data_test.py
+END
+calendar_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/calendar_test.py
+END
+webmastertools_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/webmastertools_test.py
+END
+client_smoke_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/client_smoke_test.py
+END
+photos_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/photos_test.py
+END
+books_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/books_test.py
+END
+contacts_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/contacts_test.py
+END
+sample_util_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/sample_util_test.py
+END
+client_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/client_test.py
+END
+blogger_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/blogger_test.py
+END
+resumable_upload_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/resumable_upload_test.py
+END
+docs_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/docs_test.py
+END
+core_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/core_test.py
+END

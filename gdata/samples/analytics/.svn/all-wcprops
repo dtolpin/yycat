@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/analytics
+END
+mgmt_feed_demo.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/analytics/mgmt_feed_demo.py
+END
+data_feed_demo.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/analytics/data_feed_demo.py
+END
+account_feed_demo.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/analytics/account_feed_demo.py
+END

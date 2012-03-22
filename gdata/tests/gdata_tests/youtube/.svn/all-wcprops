@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/youtube
+END
+live_client_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/youtube/live_client_test.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/youtube/__init__.py
+END
+service_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_tests/youtube/service_test.py
+END

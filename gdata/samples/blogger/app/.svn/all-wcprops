@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/blogger/app
+END
+app.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/blogger/app/app.yaml
+END
+auth_required.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/blogger/app/auth_required.html
+END
+list_blogs.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/blogger/app/list_blogs.html
+END
+blogapp.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/blogger/app/blogapp.py
+END
+post_editor.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/blogger/app/post_editor.html
+END
+welcome.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/samples/blogger/app/welcome.html
+END

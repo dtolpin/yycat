@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/apps/groups
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/apps/groups/data.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/apps/groups/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/apps/groups/__init__.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/gdata/apps/groups/service.py
+END

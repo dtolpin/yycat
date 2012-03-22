@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests
+END
+all_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/all_tests.py
+END
+testimage.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/testimage.jpg
+END
+coverage.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/coverage.py
+END
+module_test_runner.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/module_test_runner.py
+END
+run_all_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/run_all_tests.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/__init__.py
+END
+atom_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/atom_test.py
+END
+gdata_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/gdata_test.py
+END
+run_data_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/run_data_tests.py
+END
+all_tests_cached.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/all_tests_cached.py
+END
+all_tests_clear_cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/all_tests_clear_cache.py
+END
+all_tests_local.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/all_tests_local.py
+END
+all_tests_coverage.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/all_tests_coverage.py
+END
+run_service_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/tests/run_service_tests.py
+END

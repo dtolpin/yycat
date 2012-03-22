@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom
+END
+core.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/core.py
+END
+mock_http.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/mock_http.py
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/data.py
+END
+mock_service.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/mock_service.py
+END
+token_store.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/token_store.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/__init__.py
+END
+http.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/http.py
+END
+http_interface.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/http_interface.py
+END
+mock_http_core.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/mock_http_core.py
+END
+service.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/service.py
+END
+auth.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/auth.py
+END
+url.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/url.py
+END
+http_core.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/AIlab211/!svn/ver/1090/Teaching/SPLAB/gdata/src/atom/http_core.py
+END
