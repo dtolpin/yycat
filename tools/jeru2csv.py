@@ -11,7 +11,7 @@ for line in sys.stdin:
 		line = prevline+" "+line
 	if re.search("<tr", line):
 		if fields:
-			if len(fields)==5:
+			if len(fields)==5 and any(fields):
 				outp.writerow(fields)
 			fields = []
 	elif re.search("<td", line):
