@@ -1,0 +1,5 @@
+#!/bin/sh
+rm -f jeru.csv
+for letter in alef beys gimel daled hey vov zayin khes tes yud khaf lamed mem nun samekh ayin pey tzadi kuf reysh shin tof; do
+	python ../tools/jeru2csv.py < $letter.htm >> jeru.csv
+done

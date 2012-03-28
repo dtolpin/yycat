@@ -6,13 +6,15 @@ prevline = ""
 outp = csv.writer(sys.stdout)
 fields = []
 for line in sys.stdin:
+	line = line.strip()
 	if prevline:
-		line = prevline + line
+		line = prevline+" "+line
 	if re.search("<tr", line):
 		if fields:
-			outp.writerow(fields)
+			if len(fields)==5:
+				outp.writerow(fields)
 			fields = []
-	elif re.search("<td.*class=xl28", line):
+	elif re.search("<td", line):
 		if re.search("</td>", line):
 			prevline = ""
 			fields.append(re.search(">([^<]*)", line)
