@@ -18,7 +18,6 @@ def yycatkey(gd_client):
 	for i, entry in enumerate(feed.entry):
 		if entry.title.text=='Yung-Yidish-Book-Catalog':
 			key = entry.id.text.split('/')[-1]
-			print "key=%s\n" % key
 			return key
 
 def bklistid(gd_client, skey):
@@ -34,7 +33,7 @@ def upload(gd_client):
 	wid = bklistid(gd_client, skey)
 	for row in inp:
 		fields = dict(zip(COLNAMES, row))
-		print fields
+		fields['jerusalem'] = '1'
 		entry = gd_client.InsertRow(fields, skey, wid)
 
 gd_client = connect()
