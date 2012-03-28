@@ -1,8 +1,6 @@
 import sys
 import re
 import csv
-import HTMLParser
-unescape = HTMLParser.HTMLParser().unescape
 
 prevline = ""
 outp = csv.writer(sys.stdout)
