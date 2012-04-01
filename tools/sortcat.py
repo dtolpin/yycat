@@ -1,27 +1,40 @@
 import csv
-import sys
 
-### Sorts the CSV catalog file alphabetically:
-###  * by author
-###  * if there is no author, by title
 
-## read
-cat = csv.reader(sys.stdin)
+"""Small self-contained module for sorting the catalog"""
 
-header = cat.next()
-data = []
-for row in cat:
-	data.append(row)
+def read(inp):
+	"""read the catalog, return header and data"""
+	cat = csv.reader(inp)
+	
+	header = cat.next()
+	data = []
+	for row in cat:
+		data.append(row)
+		
+	return header, data
+	
+def sort(header, data):
+	"""Sorts the catalog data alphabetically:
+	* by author
+	* if no author, by title"""
+	def sortkey(row):
+		row = dict(zip(header,row))
+		return '|'.join(row[field] for field in ['author', 'title', 'year']).decode('utf-8')
+	return sorted(data, key=sortkey)
 
-## sort
-def sortkey(row):
-	row = dict(zip(header,row))
-	return (row['author'] or row['title']).decode('utf-8')
+def write(outp, header, data):	
+	"""write catalog to CSV file"""
+	cat = csv.writer(outp)
+	cat.writerow(header)
+	cat.writerows(data)
 
-data = sorted(data, key=sortkey)
+def sortcat(inp, outp):
+	"""sort CSV catalog"""
+	header, data = read(sys.stdin)
+	data = sort(header, data)
+	write(sys.stdout, header, data)
 
-## write
-cat = csv.writer(sys.stdout)
-
-cat.writerow(header)
-cat.writerows(data)
+if __name__ == "__main__":
+	import sys
+	sortcat(sys.stdin, sys.stdout)
