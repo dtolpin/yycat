@@ -1,7 +1,10 @@
 import csv
 
-
 """Small self-contained module for sorting the catalog"""
+
+def sortkey(rowdict, sep='|'):
+	"""return the sort key of the row dictionary"""
+	return sep.join(rowdict[field] for field in ['author', 'title', 'year']).decode('utf-8')
 
 def read(inp):
 	"""read the catalog, return header and data"""
@@ -16,10 +19,7 @@ def read(inp):
 	
 def sort(header, data):
 	"""Sorts the catalog data alphabetically by author, then title, then year"""
-	def sortkey(row):
-		row = dict(zip(header,row))
-		return '|'.join(row[field] for field in ['author', 'title', 'year']).decode('utf-8')
-	return sorted(data, key=sortkey)
+	return sorted(data, key=lambda row: sortkey(dict(zip(header, row))))
 
 def write(outp, header, data):	
 	"""write catalog to CSV file"""
