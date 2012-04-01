@@ -15,9 +15,7 @@ def read(inp):
 	return header, data
 	
 def sort(header, data):
-	"""Sorts the catalog data alphabetically:
-	* by author
-	* if no author, by title"""
+	"""Sorts the catalog data alphabetically by author, then title, then year"""
 	def sortkey(row):
 		row = dict(zip(header,row))
 		return '|'.join(row[field] for field in ['author', 'title', 'year']).decode('utf-8')
