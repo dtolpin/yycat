@@ -86,9 +86,9 @@ elif 'tlv' not in collection:
 print >>output, HEADER % (tcoll, hcoll)
 header = inr.next()
 for row in inr:
-	row = dict(zip(header, row))
-	if row['jerusalem'] and (int(row['jerusalem'])>0) and ('jeru' in collection) or \
-			row['telaviv'] and (int(row['telaviv'])>0) and ('tlv' in collection):
+	row = dict(zip(header, row+['']))
+	if (row['jerusalem']>'0') and ('jeru' in collection) or \
+	   (row['telaviv']>'0') and ('tlv' in collection):
 		print >>output, row2html(row)
 output.close()
 
