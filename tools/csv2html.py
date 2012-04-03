@@ -1,3 +1,8 @@
+import csv
+
+
+
+HEADER="""\
 <?xml version="1.0" encoding="utf-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -30,15 +35,11 @@
       <a href="shin.htm">ש</a>
       <a href="tof.htm">ת</a>
     </div>
-    <table>
-      <tr>
-        <td class="author">אבנר, דוב</td>
-        <td class="title">ארץ-ישראל רעפלעקסן און אנטיפאשיסטישע לידער.</td>
-        <td class="city">תל אביב</td>
-        <td class="country">ישראל</td>
-        <td class="publisher">יידיש פארלאג</td>
-        <td class="year">1948</td>
-      </tr>
+    <table class="booklist">
+"""
+
+FOOTER="""\
     </table>
   </body>
 </html> 
+"""
