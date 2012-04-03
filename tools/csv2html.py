@@ -1,6 +1,20 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 import csv
+import sys, getopt
 
-
+def row2html(row):
+	return """\
+      <tr>
+        <td class="author">%(author)s</td>
+        <td class="title">%(title)s</td>
+        <td class="city">%(city)s</td>
+        <td class="country">%(country)s</td>
+        <td class="publisher">%(publisher)s</td>
+        <td class="year">%(year)s</td>
+      </tr>
+""" % row
 
 HEADER="""\
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,3 +57,40 @@ FOOTER="""\
   </body>
 </html> 
 """
+
+collection = ['jeru', 'tlv']
+
+optlist, args = getopt.getopt(sys.argv[1:], "c:")
+
+for o, a in optlist:
+	if o=="-c":
+		collection = a.split(',')
+
+assert len(args) <= 1 # filter or single file
+
+input = sys.stdin
+output = sys.stdout
+if len(args)==1:
+	input = file(args[0], "r")
+	assert args[0].find(".csv")!=-1 # protect me from my own bugs
+	output = file(args[0].replace(".csv", ".htm"), "w")
+
+inr = csv.reader(input)
+
+tcoll = "combined"
+hcoll = ""
+if 'jeru' not in collection:
+	tcoll, hcoll = "Tel Aviv", " תל אביב"
+elif 'tlv' not in collection:
+	tcoll, hcoll = "Jerusalem", " ירושלים"
+print >>output, HEADER % (tcoll, hcoll)
+header = inr.next()
+for row in inr:
+	row = dict(zip(header, row))
+	if row['jerusalem'] and (int(row['jerusalem'])>0) and ('jeru' in collection) or \
+			row['telaviv'] and (int(row['telaviv'])>0) and ('tlv' in collection):
+		print >>output, row2html(row)
+output.close()
+
+
+
