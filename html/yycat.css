@@ -1,9 +1,38 @@
 body { 
-    direction: rtl
+    direction: rtl;
+    background-color: #ffe;
 }
 
-table {
+div.index {
+    font-size: 170%;
+    float: left;
+    padding: 3pt;
+    width: auto;
+    border: thin solid #900;
+    background-color: white;
+}
+    
+
+table.booklist {
+    clear: both;
+    margin-top: 6pt;
     border-collapse: collapse;
     width: 100%;
+    border: thin solid #999;
+    border-top: medium solid black;
+    border-bottom: medium solid black;
+    background-color: white;
 }
 
+table.booklist tr {
+    border-bottom: thin solid #999;
+}
+
+table.booklist tr:first-child {
+    background-color: #eee;
+}
+
+table.booklist th, table.booklist td {
+    text-align: start;
+    padding: 2pt 4pt;
+}

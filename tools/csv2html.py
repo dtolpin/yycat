@@ -24,7 +24,6 @@ HEADER="""\
     <link rel="stylesheet" type="text/css" href="yycat.css" />
   </head>
   <body>
-    <h1>יונג ײדיש%s: א רשימה פון די ביכער</h1>
     <div class="index">
       <a href="alef.htm">א</a>
       <a href="beys.htm">ב</a>
@@ -49,7 +48,16 @@ HEADER="""\
       <a href="shin.htm">ש</a>
       <a href="tof.htm">ת</a>
     </div>
+    <h1>יונג ײדיש%s: א רשימה פון די ביכער</h1>
     <table class="booklist">
+      <tr>
+        <th class="author">מחבּר</th>
+        <th class="title">טיטל</th>
+        <th class="city">שטאָט</th>
+        <th class="country">לאַנד</th>
+        <th class="publisher">פאַרלאַג</th>
+        <th class="year">יאָר</th>
+     </tr>   
 """
 
 FOOTER="""\
