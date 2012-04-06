@@ -36,6 +36,7 @@ def upload(gd_client):
 		fields['jerusalem'] = '1'
 		entry = gd_client.InsertRow(fields, skey, wid)
 
-gd_client = connect()
-upload(gd_client)
+if __name__=="__main__":
+	gd_client = connect()
+	upload(gd_client)
 		
