@@ -8,9 +8,16 @@ def download(gd_client, outp):
 	feed = gd_client.GetCellsFeed(skey, wid)
 	print "got"
 	cat = csv.writer(sys.stdout)
+	irow = ""
+	row = []
 	for i, entry in enumerate(feed.entry):
-		print entry.content.title
-	
+		jrow = entry.title.text[1:]
+		if irow!=jrow:
+			if row:
+				cat.writerow(row)
+				row = []
+			irow = jrow
+		row.append(entry.content.text)
 
 if __name__=="__main__":
 	import sys
