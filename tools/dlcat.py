@@ -1,4 +1,3 @@
-import sys
 import csv
 import gdata.spreadsheet.service
 
@@ -9,8 +8,6 @@ def connect():
 	gd_client.source = 'YungYiddish Catalog Updater'
 	gd_client.ProgrammaticLogin()
 	return gd_client
-
-COLNAMES = ['year', 'publisher', 'city', 'title', 'author']
 
 def yycatkey(gd_client):
 	feed = gd_client.GetSpreadsheetsFeed()
@@ -26,15 +23,27 @@ def bklistid(gd_client, skey):
 			wid = entry.id.text.split('/')[-1]
 			return wid
 
-def upload(gd_client):
-	inp = csv.reader(sys.stdin)
+def download(gd_client, outp):
 	skey = yycatkey(gd_client)
 	wid = bklistid(gd_client, skey)
-	for row in inp:
-		fields = dict(zip(COLNAMES, row))
-		fields['jerusalem'] = '1'
-		entry = gd_client.InsertRow(fields, skey, wid)
+	feed = gd_client.GetCellsFeed(skey, wid)
+	cat = csv.writer(sys.stdout)
+	irow = ""
+	row = []
+	for i, entry in enumerate(feed.entry):
+		jrow = entry.title.text[1:]
+		if irow!=jrow:
+			if row:
+				cat.writerow(row)
+				row = []
+			irow = jrow
+		row.append(entry.content.text)
 
 if __name__=="__main__":
+	import sys
 	gd_client = connect()
-	upload(gd_client)
+	print >>sys.stderr, "Downloading ...",
+	download(gd_client, sys.stdout)
+	print >>sys.stderr, "done"
+
+

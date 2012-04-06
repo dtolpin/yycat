@@ -35,4 +35,6 @@ def sortcat(inp, outp):
 
 if __name__ == "__main__":
 	import sys
+	print >>sys.stderr, "Sorting ...",
 	sortcat(sys.stdin, sys.stdout)
+	print >>sys.stderr, "done"
