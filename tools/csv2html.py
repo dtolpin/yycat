@@ -98,6 +98,7 @@ for row in inr:
 	if (row['jerusalem']>'0') and ('jeru' in collection) or \
 	   (row['telaviv']>'0') and ('tlv' in collection):
 		print >>output, row2html(row)
+print >>output, FOOTER
 output.close()
 
 

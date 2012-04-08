@@ -12,7 +12,7 @@ def connect():
 def yycatkey(gd_client):
 	feed = gd_client.GetSpreadsheetsFeed()
 	for i, entry in enumerate(feed.entry):
-		if entry.title.text=='Yung-Yidish-Book-Catalog':
+		if entry.title.text=='test': # 'Yung-Yidish-Book-Catalog':
 			key = entry.id.text.split('/')[-1]
 			return key
 
@@ -44,7 +44,6 @@ def download(gd_client, outp):
 				row = []
 			icol, irow = "A", jrow
 		while icol!=jcol:
-			print >>sys.stderr, icol, jcol
 			row.append("")
 			icol = chr(ord(icol)+1)
 		row.append(entry.content.text)
