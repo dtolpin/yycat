@@ -2,11 +2,17 @@
 
 COLLECTION=${1:-jeru,tlv}
 
+rm -rf $COLLECTION
+mkdir $COLLECTION
+cp yycat.css $COLLECTION/.
 for letter in alef beys gimel daled hey vov zayin \
 			  khes tes yud khaf lamed mem nun samekh \
 			  ayin pey tzadi kuf reysh shin tof; do
-    if [ -e $letter.csv ] ; then
-	python `dirname $0`/csv2html.py -c $COLLECTION $letter.csv
-    fi
+	if [ \! -e $letter.csv ] ; then
+		echo "call_number,author,title,country,city,publisher,year,author_yivo,title_yivo,country_en,city_en,publisher_en,jerusalem,telaviv" > $letter.csv
+	fi
+	python `dirname $0`/csv2html.py -c $COLLECTION \
+		< $letter.csv \
+		> $COLLECTION/$letter.htm
 done
 	
