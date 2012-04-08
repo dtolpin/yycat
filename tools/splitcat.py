@@ -50,6 +50,4 @@ def split(header, data):
 if __name__ == "__main__":
 	import sys
 	header, data = read(sys.stdin)
-	print >>sys.stderr, "Splitting ...",
 	split(header, data)
-	print >>sys.stderr, "done"

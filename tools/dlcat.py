@@ -52,8 +52,6 @@ def download(gd_client, outp):
 if __name__=="__main__":
 	import sys
 	gd_client = connect()
-	print >>sys.stderr, "Downloading ...",
 	download(gd_client, sys.stdout)
-	print >>sys.stderr, "done"
 
 

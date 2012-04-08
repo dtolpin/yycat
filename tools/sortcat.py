@@ -9,7 +9,7 @@ def sortkey(rowdict):
 	"""return the sort key of the row dictionary"""
 	key = ''.join(rowdict[field] for field in ['author', 'title', 'year']).decode('utf-8')
 	if key[0] < u'א':
-		key = u'א'+key
+		key = u'א'+key # everything before alef goes to alef
 	return key
 
 def read(inp):
@@ -41,6 +41,4 @@ def sortcat(inp, outp):
 
 if __name__ == "__main__":
 	import sys
-	print >>sys.stderr, "Sorting ...",
 	sortcat(sys.stdin, sys.stdout)
-	print >>sys.stderr, "done"
