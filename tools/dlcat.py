@@ -28,16 +28,27 @@ def download(gd_client, outp):
 	wid = bklistid(gd_client, skey)
 	feed = gd_client.GetCellsFeed(skey, wid)
 	cat = csv.writer(sys.stdout)
-	irow = ""
+	icol, irow = "A", ""
+	lastcol = "A"
 	row = []
 	for i, entry in enumerate(feed.entry):
-		jrow = entry.title.text[1:]
+		jcol, jrow = entry.title.text[:1], entry.title.text[1:]
 		if irow!=jrow:
+			if lastcol<icol:
+				lastcol = icol
+			while icol<lastcol:
+				row.append("")
+				icol = chr(ord(icol)+1)
 			if row:
 				cat.writerow(row)
 				row = []
-			irow = jrow
+			icol, irow = "A", jrow
+		while icol!=jcol:
+			print >>sys.stderr, icol, jcol
+			row.append("")
+			icol = chr(ord(icol)+1)
 		row.append(entry.content.text)
+		icol = chr(ord(icol)+1)
 
 if __name__=="__main__":
 	import sys
