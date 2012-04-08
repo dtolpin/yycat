@@ -37,7 +37,7 @@ def split(header, data):
 	outf = file("/dev/null")
 	outw = None
 	for row in data:
-		key = sortkey(dict(zip(header, row)), '').strip()
+		key = sortkey(dict(zip(header, row))).strip()
 		if key[0] != sec:
 			outf.close()
 			sec, outname = sections.pop(0)

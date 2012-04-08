@@ -1,10 +1,16 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 import csv
 
 """Small self-contained module for sorting the catalog"""
 
-def sortkey(rowdict, sep='|'):
+def sortkey(rowdict):
 	"""return the sort key of the row dictionary"""
-	return sep.join(rowdict[field] for field in ['author', 'title', 'year']).decode('utf-8')
+	key = ''.join(rowdict[field] for field in ['author', 'title', 'year']).decode('utf-8')
+	if key[0] < u'א':
+		key = u'א'+key
+	return key
 
 def read(inp):
 	"""read the catalog, return header and data"""
