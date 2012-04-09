@@ -10,6 +10,7 @@ def connect():
 	return gd_client
 
 def yycatkey(gd_client):
+	"""retrieves catalog key"""
 	feed = gd_client.GetSpreadsheetsFeed()
 	for i, entry in enumerate(feed.entry):
 		if entry.title.text=='Yung-Yidish-Book-Catalog':
@@ -17,6 +18,7 @@ def yycatkey(gd_client):
 			return key
 
 def bklistid(gd_client, skey):
+	"""retrieves worksheet id for the booklist"""
 	feed = gd_client.GetWorksheetsFeed(skey)
 	for i, entry in enumerate(feed.entry):
 		if entry.title.text=='booklist':
@@ -24,6 +26,7 @@ def bklistid(gd_client, skey):
 			return wid
 
 def download(gd_client, outp):
+	"""writes the book list as a CSV to outp"""
 	skey = yycatkey(gd_client)
 	wid = bklistid(gd_client, skey)
 	feed = gd_client.GetCellsFeed(skey, wid)

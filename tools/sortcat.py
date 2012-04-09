@@ -7,7 +7,8 @@ import csv
 
 def sortkey(rowdict):
 	"""return the sort key of the row dictionary"""
-	key = ''.join(rowdict[field] for field in ['author', 'title', 'year']).decode('utf-8')
+	key = ''.join(rowdict[field] for field in
+				  ['author', 'title', 'year']).decode('utf-8')
 	if key[0] < u'א':
 		key = u'א'+key # everything before alef goes to alef
 	return key
@@ -24,7 +25,8 @@ def read(inp):
 	return header, data
 	
 def sort(header, data):
-	"""Sorts the catalog data alphabetically by author, then title, then year"""
+	"""Sorts the catalog data alphabetically by author,
+	then title, then year"""
 	return sorted(data, key=lambda row: sortkey(dict(zip(header, row))))
 
 def write(outp, header, data):	
