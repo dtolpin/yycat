@@ -2,13 +2,16 @@
 
 # configuration variables
 
-HTMLDIR=$HOME/work/yycat/html
+HOME=${HOME:-/home/dvd}
+PATH=$HOME/bin:$PATH
+HTMLDIR=$HOME/public_html/yycat/html
+TOOLDIR=$HOME/work/yycat/tools
 HTMLURL=/~dvd/yycat/html
 
 # end of configuration
 
 if echo $QUERY_STRING|grep -q generate ; then
-   (cd $HTMLDIR; ../tools/cat2html)
+   (cd $HTMLDIR; $TOOLDIR/cat2html)
 fi
 
 cat <<__END_OF_PAGE__
@@ -41,4 +44,4 @@ Content-Type: text/html
     </div>
   </body>
 </html>
-__END_OF_PAGE__     
+__END_OF_PAGE__
