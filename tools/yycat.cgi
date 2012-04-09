@@ -1,7 +1,14 @@
 #!/bin/sh
 
+# configuration variables
+
+HTMLDIR=$HOME/work/yycat/html
+HTMLURL=/~dvd/yycat/html
+
+# end of configuration
+
 if echo $QUERY_STRING|grep -q generate ; then
-   (cd ~/public_html/yycat/html; ../tools/cat2html)
+   (cd $HTMLDIR; ../tools/cat2html)
 fi
 
 cat <<__END_OF_PAGE__
@@ -27,9 +34,9 @@ Content-Type: text/html
     </div>
     <div style="float: right">
       <ul>
-        <li><a href="/~dvd/yycat/html/jeru/alef.htm" target="yycat:jeru">ירושלמער פֿערזאַמלונג</a></li>
-        <li><a href="/~dvd/yycat/html/tlv/alef.htm" target="yycat:tlv">תל־אביבער פֿערזאַמלונג</a></li>
-        <li><a href="/~dvd/yycat/html/jeru,tlv/" target="yycat:jeru,tlv">אַלגעמײַנע פֿערזאַמלונג</a></li>
+        <li><a href="$HTMLURL/jeru/alef.htm" target="yycat:jeru">ירושלמער פֿערזאַמלונג</a></li>
+        <li><a href="$HTMLURL/tlv/alef.htm" target="yycat:tlv">תל־אביבער פֿערזאַמלונג</a></li>
+        <li><a href="$HTMLURL/jeru,tlv/" target="yycat:jeru,tlv">אַלגעמײַנע פֿערזאַמלונג</a></li>
       </ul>
     </div>
   </body>
