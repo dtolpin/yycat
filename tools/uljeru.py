@@ -4,8 +4,8 @@ import gdata.spreadsheet.service
 
 def connect():
 	gd_client = gdata.spreadsheet.service.SpreadsheetsService()
-	gd_client.email = 'yybkcat@gmail.com'
-	gd_client.password = '5i5ernoter'
+	gd_client.email = 'david.tolpin@gmail.com'
+	gd_client.password = '33banana'
 	gd_client.source = 'YungYiddish Catalog Updater'
 	gd_client.ProgrammaticLogin()
 	return gd_client
