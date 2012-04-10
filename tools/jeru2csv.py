@@ -11,7 +11,8 @@ for line in sys.stdin:
 		.replace("&quot;", "\"") \
 		.replace("&amp;", "&") \
 		.replace("&aacute;", "a") \
-		.replace("&acirc;", "a")
+		.replace("&acirc;", "a") \
+		.replace("&nbsp;", " ")
 	
 	
 	if prevline:
@@ -34,5 +35,11 @@ for line in sys.stdin:
 					 .strip())
 			field = re.sub("<span[>]*>", "", field)
 			field = re.sub("</span>", "", field)
-			fields.append(field)
+			colspan = re.search("colspan=([1-9])", line)
+			if colspan:
+				colspan = int(colspan.group(1))
+			else:
+				colspan = 1
+			for i in range(colspan):
+				fields.append(field)
 
