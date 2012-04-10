@@ -37,9 +37,9 @@ Content-Type: text/html
     </div>
     <div style="float: right">
       <ul>
-        <li><a href="$HTMLURL/jeru/alef.htm" target="yycat:jeru">ירושלמער פֿערזאַמלונג</a></li>
-        <li><a href="$HTMLURL/tlv/alef.htm" target="yycat:tlv">תל־אביבער פֿערזאַמלונג</a></li>
-        <li><a href="$HTMLURL/jeru,tlv/alef.htm" target="yycat:jeru,tlv">אַלגעמײַנע פֿערזאַמלונג</a></li>
+        <li><a href="$HTMLURL/jeru/alef.htm" target="yycat:jeru">ירושלמער זאַמלונג</a></li>
+        <li><a href="$HTMLURL/tlv/alef.htm" target="yycat:tlv">תל־אביבער זאַמלונג</a></li>
+        <li><a href="$HTMLURL/jeru,tlv/alef.htm" target="yycat:jeru,tlv">אַלגעמײַנע זאַמלונג</a></li>
       </ul>
     </div>
   </body>
