@@ -14,13 +14,13 @@ for line in sys.stdin:
 		.replace("&acirc;", "a") \
 		.replace("&nbsp;", " ")
 	
-	
 	if prevline:
 		line = prevline+" "+line
+	prevline = line
 	if re.search("href", line):
 		skiprecord = True
 		prevline = ""
-	elif re.search("<tr", line):
+	elif re.search("<tr", line) or re.search("</table", line):
 		prevline = ""
 		if not skiprecord and len(fields)>=5 and any(fields):
 			outp.writerow(fields)
@@ -33,7 +33,7 @@ for line in sys.stdin:
 					 .group(1).decode('windows-1255')
 					 .encode('utf-8')
 					 .strip())
-			field = re.sub("<span[>]*>", "", field)
+			field = re.sub("<span[^>]*>", "", field)
 			field = re.sub("</span>", "", field)
 			colspan = re.search("colspan=([1-9])", line)
 			if colspan:
