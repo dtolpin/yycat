@@ -15,22 +15,28 @@ function editBook() {
     return;
   }
   
+  if(booklist.getActiveCell().getRow()==1) {
+    booklist.insertRowAfter(1);
+    booklist.getRange(2,1).activate();
+  }
+  
   /* gather field name and values */
   var names = colnames(booklist);
   var values = booklist.getRange(booklist.getActiveCell().getRow(), 1, 
                                1, names.length).getValues()[0];
-
-  /* compute default values for empty fields */
   
   var app = UiApp.createApplication().setWidth(400).setHeight(600);
   var panel = app.createVerticalPanel();
   var grid = app.createGrid(names.length, 2);
+
   for(var ifield = 0; ifield != names.length; ++ifield) {
     grid.setWidget(ifield, 0, app.createLabel(names[ifield]).setStyleAttribute('text-align', 'right'));
     grid.setWidget(ifield, 1,
                    app.createTextBox()
                    .setWidth(300)
-                   .setValue(values[ifield]));
+                   .setName(names[ifield])
+                   .setValue(values[ifield])
+                   .addValueChangeHandler(app.createServerHandler('field_changed')));
   }
   
   panel.add(grid);
@@ -42,6 +48,20 @@ function editBook() {
   app.add(panel);
   yybkcat.show(app);
 }
+      
+function field_changed (e) {
+  var booklist = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  /* gather field name and values */
+  for(var icol = 1; icol!=20; ++icol) {
+    var name = booklist.getRange(1, icol).getValue()
+        .toString().trim();
+    if(e.parameter.hasOwnProperty(name)) {
+      booklist.getRange(booklist.getActiveCell().getRow(), icol)
+        .setValue(e.parameter[name]);
+      break;
+    }
+  }
+}
 
 function closeApp() {
   return UiApp.getActiveApplication().close();
@@ -52,7 +72,8 @@ function closeApp() {
 function colnames(sheet) {
   var names = [];  
   for(var icol=1;; ++icol) {
-    var name = sheet.getRange(1, icol).getValue().trim();
+    var name = sheet.getRange(1, icol).getValue()
+        .toString().trim();
     if(!name)
       break;
     names.push(name);
