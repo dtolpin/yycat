@@ -28,7 +28,7 @@ function editBook() {
   var names = colnames_(booklist);
   var values = rowvalues_(booklist, names); /* in the active row */
 
-  var app = UiApp.createApplication().setWidth(360).setHeight(480);
+  var app = UiApp.createApplication().setWidth(360).setHeight(520);
   var panel = app.createVerticalPanel();
   var buttons = app.createHorizontalPanel();
   
@@ -111,7 +111,8 @@ function autofill_() {
 }
 
 function suggest_cn_() {
-  var booklist = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var yybkcat = SpreadsheetApp.getActiveSpreadsheet();
+  var booklist = yybkcat.getActiveSheet();
   var names = colnames_(booklist);
   var values = rowvalues_(booklist, names);
   var record = {}, colno = {};
@@ -131,12 +132,13 @@ function suggest_cn_() {
       calcell = booklist.getRange(currow, calcol),
       
       /* symbolic range for call_number */
-      cncolid = String.fromCharCode(cncol-1+'A'.charCodeAt(0));
-      cns = cncolid+'2:'+cncolid+booklist.getLastRow();
+      cncolid = String.fromCharCode(cncol-1+'A'.charCodeAt(0)),
+      cns = cncolid+':'+cncolid;
 
-  var call_number_prefix = 'אלג'
-      + '\\' +record['author'].substring(0,3)
-      + '\\' +record['title'].substring(0, 1);
+  var call_number_prefix = 
+      yybkcat.getRangeByName('call_number_prefix').getValue()
+      + '\\' +strip_name_(record['author']).substring(0, 3)
+      + '\\' +strip_name_(record['title']).substring(0, 1);
   cncell.clear();
   for(var i=1;;++i) {
     var call_number = call_number_prefix+i;
@@ -151,6 +153,13 @@ function suggest_cn_() {
   
   closeApp_();
   return editBook();
+}
+
+function strip_name_(name) {
+  return name
+    .replace(/ִ^(די|דאס|דאָס|דער|א|אַ|אן|אַן) /, '')
+    .replace(/\./g, '')
+    .replace(/ /g, '');
 }
 
 function closeApp_() {
