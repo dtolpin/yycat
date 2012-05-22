@@ -1,0 +1,10 @@
+#!/bin/sh
+
+python `dirname $0`/dlcat.py | \
+python `dirname $0`/sortcat.py | \
+python `dirname $0`/splitcat.py
+echo >&2
+
+for coll in jeru tlv jeru,tlv; do
+	`dirname $0`/csvs2html $coll
+done
