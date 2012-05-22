@@ -10,7 +10,6 @@ def row2html(row):
         <td class="author">%(author)s</td>
         <td class="title">%(title)s</td>
         <td class="city">%(city)s</td>
-        <td class="country">%(country)s</td>
         <td class="publisher">%(publisher)s</td>
         <td class="year">%(year)s</td>
       </tr>
@@ -54,7 +53,6 @@ HEADER="""\
         <th class="author">מחבּר</th>
         <th class="title">טיטל</th>
         <th class="city">שטאָט</th>
-        <th class="country">לאַנד</th>
         <th class="publisher">פאַרלאַג</th>
         <th class="year">יאָר</th>
      </tr>   
