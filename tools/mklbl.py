@@ -64,8 +64,8 @@ def mksheet():
 	irow = 0
 	for row in cat:
 		call_number = row[0]
-		count = int(row[1])
-		del row[1]
+		count = int(row[1] or row[2])
+		del row[1:2]
 		info = "\n".join(squeezed(row))
 		
 		for i in range(count):
