@@ -54,7 +54,6 @@ def mksheet():
 						 for word in row if word)
 		
 		for i in range(count):
-			print " . "
 			print "    <div class=\"qrcode\">"
 			print "      <p>%s</p>" % call_number
 			mklbl(info)
