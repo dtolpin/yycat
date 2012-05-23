@@ -5,7 +5,7 @@ import qrcode
 from qrcode.image.svg import SvgFragmentImage
 import csv
 
-MAX_FIELD_LENGTH = 12
+MAX_FIELD_LENGTH = 14
 NCOLS = 3
 NROWS = 3
 
@@ -24,7 +24,7 @@ PROLOGUE="""\
     <style type="text/css">
       body { margin: 0; padding: 0}
       div.qrcode {
-        width: 2.25in; height: 2.5in;
+        width: 2.4in; height: 2.6in;
         padding: 0;
         float: left;
         border: thin solid gray;
@@ -46,6 +46,14 @@ EPILOGUE="""\
   </html>
 """
 
+def squeezed(row):
+	"""squeeze the info if two long"""
+	row = [word.strip() for word in row if not word.isspace()]
+	if sum(len(word) for word in row) > MAX_FIELD_LENGTH*len(row):
+		# squeeze only if the *total length* is too large
+		row = [word.decode('utf-8')[:MAX_FIELD_LENGTH].encode('utf-8') for word in row]
+	return row
+
 def mksheet():
 	print PROLOGUE
 	cat = csv.reader(sys.stdin)
@@ -58,8 +66,7 @@ def mksheet():
 		call_number = row[0]
 		count = int(row[1])
 		del row[1]
-		info = "\n".join(word.decode('utf-8').strip()[:MAX_FIELD_LENGTH].encode('utf-8')
-						 for word in row if word)
+		info = "\n".join(squeezed(row))
 		
 		for i in range(count):
 
