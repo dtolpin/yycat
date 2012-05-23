@@ -43,6 +43,13 @@ Content-Type: text/html
         <li><a href="$HTMLURL/jeru,tlv/alef.htm" target="yycat:jeru,tlv">אַלגעמײַנע זאַמלונג</a></li>
       </ul>
     </div>
+    <div style="clear: both">
+      <h2>עטיקעטן</h2>
+      <ul>
+        <li><a href="yycat-mklbl?jeru">ירושלם</a></li>
+        <li><a href="yycat-mklbl?ta">תל אביב</a></li>
+      </ul>
+    </div> 
   </body>
 </html>
 __END_OF_PAGE__
