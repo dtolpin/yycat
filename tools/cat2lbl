@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# configuration variables
+
+HOME=${HOME:-/home/dvd}
+PATH=$HOME/bin:$PATH
+TOOLDIR=$HOME/work/yycat/tools
+
+python `dirname $0`/dlcat.py labels_to_print_$1 | \
+python `dirname $0`/mklbl.py
