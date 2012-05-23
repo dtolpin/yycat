@@ -6,6 +6,8 @@ from qrcode.image.svg import SvgFragmentImage
 import csv
 
 MAX_FIELD_LENGTH = 12
+NCOLS = 3
+NROWS = 3
 
 def mklbl(info):
 	"""print qrcode to stdout"""
@@ -28,9 +30,12 @@ PROLOGUE="""\
         border: thin solid gray;
 	    page-break-inside: avoid;
         text-align: center;
+        display-align: center;
         font-family: sans serif;
       }
-      div.qrcode p {padding: 0; margin: 0;}
+      table { border-collapse: collapse; }
+      td { padding: 0; vertical-align: middle; }
+      div.qrcode p {padding-top: 6pt; margin: 0; font-family: sans serif }
     </style>
   </head>
   <body>
@@ -46,6 +51,9 @@ def mksheet():
 	cat = csv.reader(sys.stdin)
 	
 	cat.next() # skip the header
+	print "<table><tr>"
+	icell = 0
+	irow = 0
 	for row in cat:
 		call_number = row[0]
 		count = int(row[1])
@@ -54,10 +62,25 @@ def mksheet():
 						 for word in row if word)
 		
 		for i in range(count):
-			print "    <div class=\"qrcode\">"
-			print "      <p>%s</p>" % call_number
+
+			if icell==NCOLS:
+				icell = 0
+				print "</tr>"
+				irow+=1
+				if irow==NROWS:
+					irow = 0
+					print "<tr style=\"page-break-before: always\">"
+				else:
+					print "<tr>"
+
+			print "    <td>"
+			print "      <div class=\"qrcode\">"
+			print "        <p>%s</p>" % call_number
 			mklbl(info)
-			print "    </div>"
+			print "      </div>"
+			print "    </td>"
+			icell+= 1
+	print "</tr></table>"
 		
 	print EPILOGUE
 
