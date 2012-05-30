@@ -7,7 +7,7 @@ import csv
 
 MAX_FIELD_LENGTH = 14
 NCOLS = 3
-NROWS = 3
+NROWS = 4
 
 def mklbl(info):
 	"""print qrcode to stdout"""
@@ -22,20 +22,24 @@ PROLOGUE="""\
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style type="text/css">
-      body { margin: 0; padding: 0}
+      body { margin: 0; padding: 0;}
       div.qrcode {
-        width: 2.4in; height: 2.6in;
+        width: 2.3in; height: 2.4in;
         padding: 0;
         float: left;
         border: thin solid gray;
-	    page-break-inside: avoid;
+        page-break-inside: avoid;
         text-align: center;
         display-align: center;
         font-family: sans serif;
       }
-      table { border-collapse: collapse; }
+      table { padding: 0; margin: 0; border-collapse: collapse; }
       td { padding: 0; vertical-align: middle; }
-      div.qrcode p {padding-top: 6pt; margin: 0; font-family: sans serif }
+      div.qrcode p {
+        padding: 0; margin: 0;
+        padding-top: 6pt;
+        font-family: sans serif;
+      }
     </style>
   </head>
   <body>
