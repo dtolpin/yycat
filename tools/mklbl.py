@@ -24,7 +24,7 @@ PROLOGUE="""\
     <style type="text/css">
       body { margin: 0; padding: 0;}
       div.qrcode {
-        width: 2.3in; height: 2.4in;
+        width: 2.3in; height: 2.5in;
         padding: 0;
         float: left;
         border: thin solid gray;
