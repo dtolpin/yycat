@@ -20,6 +20,7 @@ HEADER="""\
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Yung Yiddish Catalog (%s)</title> <!-- Combined, Tel Aviv, or Jerusalem -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="yycat.css" />
   </head>
   <body>
